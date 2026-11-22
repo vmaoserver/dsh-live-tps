@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "title": {
+    "en": "dsh-live-tps",
+    "zh": "dsh-live-tps"
+  },
+  "description": {
+    "en": "Live output speed for the DeepSeek Harness composer.",
+    "zh": "DeepSeek Harness 输入框下方的实时输出速度。"
+  },
+  "metadata": {},
+  "plugins": [
+    {
+      "name": "dsh-live-tps",
+      "title": {
+        "en": "Live output speed",
+        "zh": "实时输出速度"
+      },
+      "description": {
+        "en": "Keeps the streaming output rate in tokens per second permanently under the composer, after the shipped activity and usage pills. While tokens arrive the digits turn the theme's blue accent and refresh about five times a second; when the stream pauses the last figure freezes and dims; after the answer settles it stays as that answer's own decode rate, and a reloaded page reads the newest settled answer from the log instead of starting blank. Only a Session with no answer yet shows a dash. The rate includes reasoning as well as answer text, because both come from the same stream, and the hover title says so. Everything is folded in the browser from the live Assistant stream frames and settled messages the open conversation already holds, so it makes no model request, reads no file, and sends nothing anywhere; it counts one token per non-empty stream delta, which matches providers that deliver one token per delta. Turn the plugin off to remove the reading and nothing else.",
+        "zh": "在输入框下方（已内置的 activity、usage 读数之后）常驻显示流式输出速度（tok/s）。有 token 到达时数字变成主题蓝色、约每秒刷新五次；输出停顿时保留最后数值并变淡；一条回答结束后继续显示它自己的解码速度；刷新页面时直接从日志里读出最近一条已结算回答的速度，不会先空着。只有还没产生过回答的会话才显示破折号。速度包含正文与思考内容——同一股流生成，悬停标题里有口径说明。全部在浏览器里由当前会话已有的实时流帧与已结算消息折叠得到，不发起模型请求、不读取文件、不上传任何数据；它把每个非空的流增量记作一个 token，与逐一 token 推送的模型服务一致。关闭插件只会移除这个读数。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgdmlld0JveD0iMCAwIDM2IDM2IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlNwZWVkIGdhdWdlIj4KICA8cGF0aCBkPSJNOC41IDI0LjUgQTExIDExIDAgMSAxIDI3LjUgMjQuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNWY2ZjdmIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xOCAxOSBMMjEuMSAxMy42IiBmaWxsPSJub25lIiBzdHJva2U9IiMyZjgwZWQiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMTgiIGN5PSIxOSIgcj0iMi40IiBmaWxsPSIjMmY4MGVkIi8+Cjwvc3ZnPgo=",
+      "metadata": {
+        "category": null,
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "deepseek-harness",
+          "tokens-per-second",
+          "tok/s",
+          "streaming",
+          "status-bar"
+        ],
+        "labels": []
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795342358,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/vmaoserver/dsh-live-tps",
+            "commit": "7da870cb8e6f9bca20f5ca462dc7570aca1f6c03"
+          },
+          "engines": {
+            "dsh": "^0.2.2-rc.3"
+          }
+        }
+      ]
+    }
+  ]
+}
