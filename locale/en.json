@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Live output speed",
+    "description": "Keeps the streaming output rate in tokens per second permanently under the composer, after the shipped activity and usage pills. While tokens arrive the digits turn the theme's blue accent and refresh about five times a second; when the stream pauses the last figure freezes and dims; after the answer settles it stays as that answer's own decode rate, and a reloaded page reads the newest settled answer from the log instead of starting blank. Only a Session with no answer yet shows a dash. The rate includes reasoning as well as answer text, because both come from the same stream, and the hover title says so. Everything is folded in the browser from the live Assistant stream frames and settled messages the open conversation already holds, so it makes no model request, reads no file, and sends nothing anywhere; it counts one token per non-empty stream delta, which matches providers that deliver one token per delta. Turn the plugin off to remove the reading and nothing else."
+  }
+}
